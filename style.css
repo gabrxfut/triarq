@@ -1,0 +1,15 @@
+:root {
+    --main-azul-escudo-color: #1F2D44;
+    --main-azul-noche-color: #141E30;
+    --main-marfil-color: #F4F2EE;
+    --main-papel-color: #FBFAF7;
+    --main-bronce-claro-color: #C9A96E;
+    --main-bronce-oscuro-color: #7A5C2E;
+    --main-texto-principal-color: #2E3A4F;
+    --main-texto-suave-color: #5B6475;
+    --main-lineas-color: #D8D3C8;
+}
+
+body {
+    background-color: var(--main-marfil-color);
+}
