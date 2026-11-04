@@ -8,8 +8,17 @@
     --main-texto-principal-color: #2E3A4F;
     --main-texto-suave-color: #5B6475;
     --main-lineas-color: #D8D3C8;
+    --main-cormorant-garamond: "Cormorant Garamond", serif;
+    --main-cinzel: "Cinzel", serif;
+    --main-mulish: "Mulish", sans-serif;
 }
 
 body {
     background-color: var(--main-marfil-color);
+    color: var(--main-texto-principal-color);
+    font-family: var(--main-mulish);
+}
+
+.titulos {
+    font-family: var(--main-cormorant-garamond);
 }
