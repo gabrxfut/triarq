@@ -1,3 +1,6 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 :root {
     --main-azul-escudo-color: #1F2D44;
     --main-azul-noche-color: #141E30;
@@ -17,8 +20,122 @@ body {
     background-color: var(--main-marfil-color);
     color: var(--main-texto-principal-color);
     font-family: var(--main-mulish);
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.65;
 }
 
 .titulos {
     font-family: var(--main-cormorant-garamond);
+    font-weight: 500;
+}
+
+.barra-superior {
+    background-color: var(--main-azul-noche-color);
+    color: var(--main-lineas-color);
+    font-size: 13px;
+    padding: 9px 0;
+    letter-spacing: 0.04em;
+}
+
+.barra-superior a {
+    text-decoration: none;
+    color: var(--main-lineas-color);
+}
+
+.contenedor {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.barra-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px 24px;
+}
+
+.barra-enlaces {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.barra-superior .enlace-pqrsf {
+    color: var(--main-bronce-claro-color);
+}
+
+.encabezado {
+    border-bottom: 1px solid var(--main-lineas-color);
+}
+
+.encabezado-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+}
+
+.marca-nombre {
+    display: block;
+    font-family: var(--main-cinzel);
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: 0.14em;
+    color: var(--main-azul-escudo-color);
+}
+
+.marca-sub {
+    display: block;
+    font-family: var(--main-cinzel);
+    color: var(--main-texto-suave-color);
+    letter-spacing: 0.30em;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.menu {
+    font-family: var(--main-cinzel);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 34px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-size: 13px;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+a {
+    color: var(--main-azul-escudo-color);
+}
+
+.boton-principal {
+    background-color: var(--main-azul-escudo-color);
+    color: var(--main-papel-color);
+    display: inline-flex;
+    align-items: center;
+    padding: 0 22px;
+    min-height: 46px;
+}
+
+.boton {
+    border: 1px solid;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: var(--main-cinzel);
 }
