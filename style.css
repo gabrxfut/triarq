@@ -30,6 +30,10 @@ body {
     font-weight: 500;
 }
 
+.menu-etiquetas {
+    font-family: var(--main-cinzel);
+}
+
 .barra-superior {
     background-color: var(--main-azul-noche-color);
     color: var(--main-lineas-color);
@@ -124,18 +128,48 @@ a {
     color: var(--main-azul-escudo-color);
 }
 
-.boton-principal {
-    background-color: var(--main-azul-escudo-color);
-    color: var(--main-papel-color);
+.boton {
+    text-decoration: none;
+    font-family: var(--main-cinzel);
+    padding: 10px 20px;
     display: inline-flex;
     align-items: center;
-    padding: 0 22px;
     min-height: 46px;
 }
 
-.boton {
-    border: 1px solid;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-family: var(--main-cinzel);
+.boton-azul {
+    background-color: var(--main-azul-escudo-color);
+    color: var(--main-papel-color);
+}
+
+.boton-borde {
+    border: 1px solid; 
+}
+
+.seccion1 {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 760px;
+    
+}
+
+.principal{
+    flex: 1 1 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 80px 32px;
+    
+}
+
+.frase-socio {
+    flex: 1 1 480px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-azul-escudo-color);
+    color: var(--main-papel-color);
+    justify-content: end;
+    align-items: start;
+    
 }
