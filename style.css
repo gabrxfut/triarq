@@ -1,6 +1,9 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
+
 :root {
     --main-azul-escudo-color: #1F2D44;
     --main-azul-noche-color: #141E30;
@@ -30,7 +33,7 @@ body {
     font-weight: 500;
 }
 
-.menu-etiquetas {
+.texto2 {
     font-family: var(--main-cinzel);
 }
 
@@ -143,24 +146,29 @@ a {
 }
 
 .boton-borde {
-    border: 1px solid; 
+    border: 1px solid;
 }
 
 .seccion1 {
     display: flex;
     flex-wrap: wrap;
     min-height: 760px;
-    
 }
 
-.principal{
+.botones-principal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.principal {
     flex: 1 1 560px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
     padding: 80px 32px;
-    
+
 }
 
 .frase-socio {
@@ -171,5 +179,36 @@ a {
     color: var(--main-papel-color);
     justify-content: end;
     align-items: start;
-    
+}
+h1 {
+    font-size: 88px;
+    line-height: 0.98;
+    color: var(--main-azul-escudo-color);
+    margin: 0;
+}
+
+em {
+    color: var(--main-bronce-oscuro-color);
+}
+
+.firma {
+    color: var(--main-bronce-oscuro-color);
+    font-size: 14px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+}
+
+.significado-nombre {
+    max-width: 540px;
+    font-size: 19px;
+    margin-top: 32px;
+    margin-bottom: 40px;
+}
+
+@media(max-width:768px) {
+    h1 {
+        font-size: 50px;
+    }
+
 }
