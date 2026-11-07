@@ -179,7 +179,11 @@ a {
     color: var(--main-papel-color);
     justify-content: end;
     align-items: start;
+    min-height: 560px;
+    background-image: url(imagen/svg/columnas-hero.svg);
+    background-size: cover;
 }
+
 h1 {
     font-size: 88px;
     line-height: 0.98;
@@ -206,9 +210,33 @@ em {
     margin-bottom: 40px;
 }
 
+.frase {
+    font-size: 30px;
+    line-height: 1.25;
+    color: var(--main-marfil-color);
+    margin: 0;
+    max-width: 520px;
+    padding: 0 48px 48px;
+}
+
+.autor {
+    color: var(--main-bronce-claro-color);
+    letter-spacing: 0.28em;
+    padding-top: 14px;
+    font-size: 16px;
+}
+
+blockquote {
+    margin: 0;
+    font-style: italic;
+}
+
 @media(max-width:768px) {
     h1 {
         font-size: 50px;
     }
 
+    .frase {
+        font-size: 28px;
+    }
 }
