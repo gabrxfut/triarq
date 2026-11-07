@@ -153,6 +153,11 @@ a {
     border: 1px solid;
 }
 
+.boton-bronce {
+    border: 1px solid var(--main-bronce-claro-color);
+    color: var(--main-marfil-color);
+}
+
 .seccion1 {
     display: flex;
     flex-wrap: wrap;
@@ -388,6 +393,7 @@ img {
     letter-spacing: 0.18em;
     min-height: 48px;
     font-size: 12px;
+    text-transform: uppercase;
 }
 
 .rayitas {
@@ -412,6 +418,38 @@ img {
     font-style: italic;
     font-size: 25px;
 }
+
+.seccion5 {
+
+    background-color: var(--main-azul-escudo-color);
+    padding: 100px 0;
+}
+
+.promesa {
+    max-width: 1000px;
+    color: var(--main-marfil-color);
+    text-align: center;
+}
+
+.promesa-frase {
+    line-height: 1.2;
+    margin: 0;
+    font-size: 48px;
+}
+
+.promesa .boton {
+    margin-top: 40px;
+}
+
+.onda {
+    display: block;
+    margin: 0 auto 28px;
+}
+
+.parte-promesa {
+    color: var(--main-bronce-claro-color);
+}
+
 
 @media(max-width:768px) {
     h1 {
