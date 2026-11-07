@@ -196,7 +196,7 @@ em {
     color: var(--main-bronce-oscuro-color);
 }
 
-.firma {
+.etiqueta-seccion {
     color: var(--main-bronce-oscuro-color);
     font-size: 14px;
     letter-spacing: 0.3em;
@@ -270,6 +270,50 @@ blockquote {
     background-color: var(--main-azul-noche-color);
 }
 
+.seccion3 {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 120px 32px 100px;
+}
+
+.somos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 64px;
+}
+
+.logo {
+    flex: 0 1 380px;
+}
+
+.quien-somos {
+    flex: 1 1 520px;
+}
+
+h2 {
+    line-height: 1.05;
+    color: var(--main-azul-escudo-color);
+    font-size: 56px;
+    padding-bottom: 24px;
+    margin: 0;
+}
+
+.texto-somos {
+    font-size: 18px;
+}
+
+.ramas {
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    color: var(--main-azul-escudo-color);
+}
+
+img {
+        max-width: 100%;
+        height: auto;
+    }
+
 @media(max-width:768px) {
     h1 {
         font-size: 50px;
@@ -287,4 +331,5 @@ blockquote {
     .dato-cifras:last-child {
         border-bottom: unset;
     }
+
 }
