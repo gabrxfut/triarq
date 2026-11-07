@@ -14,6 +14,7 @@
     --main-texto-principal-color: #2E3A4F;
     --main-texto-suave-color: #5B6475;
     --main-lineas-color: #D8D3C8;
+    --main-lineas-sutil-color: #33425c;
     --main-cormorant-garamond: "Cormorant Garamond", serif;
     --main-cinzel: "Cinzel", serif;
     --main-mulish: "Mulish", sans-serif;
@@ -231,6 +232,44 @@ blockquote {
     font-style: italic;
 }
 
+.firma-cifras {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 0;
+    padding-top: 44px;
+    padding-bottom: 44px;
+    text-align: center;
+    gap: 24px;
+}
+
+.dato-cifras {
+    border-right: 1px solid var(--main-lineas-sutil-color);
+}
+
+.dato-cifras:last-child {
+    border-right: unset;
+}
+
+.nombre-cifras {
+    color: var(--main-bronce-claro-color);
+    margin: 0;
+    letter-spacing: 0.28em;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.cifras {
+    color: var(--main-marfil-color);
+    margin: 0;
+    font-size: 58px;
+    line-height: 1;
+    margin-top: 6px;
+}
+
+.seccion2 {
+    background-color: var(--main-azul-noche-color);
+}
+
 @media(max-width:768px) {
     h1 {
         font-size: 50px;
@@ -238,5 +277,14 @@ blockquote {
 
     .frase {
         font-size: 28px;
+    }
+
+    .dato-cifras {
+        border-bottom: 1px solid var(--main-lineas-sutil-color);
+        border-right: unset;
+    }
+
+    .dato-cifras:last-child {
+        border-bottom: unset;
     }
 }
