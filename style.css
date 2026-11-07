@@ -18,6 +18,7 @@
     --main-rayas-color: #2A3B57;
     --main-blanco-color: #ffffff;
     --main-bronce-color: #A3824F;
+    --main-foto-color: #E6E2D9;
     --main-cormorant-garamond: "Cormorant Garamond", serif;
     --main-cinzel: "Cinzel", serif;
     --main-mulish: "Mulish", sans-serif;
@@ -450,6 +451,46 @@ img {
     color: var(--main-bronce-claro-color);
 }
 
+.foto-equipo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+}
+
+.frase-equipo {
+    margin-bottom: 48px;
+}
+
+.nombre-socios {
+    letter-spacing: 0.08em;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: 19px;
+    color: var(--main-azul-escudo-color);
+}
+
+.foto {
+    aspect-ratio: 4/5;
+    background: var(--main-lineas-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid var(--main-azul-escudo-color);
+    font-size: 15px;
+    color: var(--main-foto-color);
+}
+
+.seccion6 {
+    padding: 110px 0;
+}
+
+.cargo {
+    font-style: italic;
+    font-size: 21px;
+    color: var(--main-bronce-oscuro-color);
+    margin: 0;
+}
 
 @media(max-width:768px) {
     h1 {
