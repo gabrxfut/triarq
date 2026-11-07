@@ -15,6 +15,9 @@
     --main-texto-suave-color: #5B6475;
     --main-lineas-color: #D8D3C8;
     --main-lineas-sutil-color: #33425c;
+    --main-rayas-color: #2A3B57;
+    --main-blanco-color: #ffffff;
+    --main-bronce-color: #A3824F;
     --main-cormorant-garamond: "Cormorant Garamond", serif;
     --main-cinzel: "Cinzel", serif;
     --main-mulish: "Mulish", sans-serif;
@@ -310,9 +313,105 @@ h2 {
 }
 
 img {
-        max-width: 100%;
-        height: auto;
-    }
+    max-width: 100%;
+    height: auto;
+}
+
+.seccion4 {
+    background-color: var(--main-papel-color);
+    padding-top: 110px;
+    padding-bottom: 110px;
+    border-top: 1px solid var(--main-lineas-color);
+    border-bottom: 1px solid var(--main-lineas-color);
+}
+
+.titulo-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: end;
+    gap: 24px;
+    margin-bottom: 56px;
+}
+
+.introducion-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 28px;
+}
+
+.tarjetas {
+    padding: 28px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    flex: 1 1 0%;
+}
+
+.rama {
+    border: 1px solid var(--main-lineas-color);
+    background-color: var(--main-blanco-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.inicio-tarjetas {
+    background-color: var(--main-azul-escudo-color);
+    padding: 28px 32px 24px;
+}
+
+.rayas {
+    height: 14px;
+    background: repeating-linear-gradient(90deg, var(--main-azul-escudo-color) 0px 6px, var(--main-rayas-color) 6px 14px);
+}
+
+.lista {
+    margin: 0;
+    padding-left: 0;
+}
+
+.lista-sinpuntos {
+    list-style: none;
+    border-top: 1px solid var(--main-lineas-color);
+    display: flex;
+    gap: 12px;
+    padding: 11px 0;
+    font-size: 16px;
+}
+
+.lista-sinpuntos:last-child {
+    border-bottom: 1px solid var(--main-lineas-color);
+}
+
+.enlace-ramas {
+    margin-top: auto;
+    letter-spacing: 0.18em;
+    min-height: 48px;
+    font-size: 12px;
+}
+
+.rayitas {
+    flex: 0 0 auto;
+    width: 3px;
+    height: 16px;
+    margin-top: 5px;
+    background-color: var(--main-bronce-color);
+}
+
+.funcion {
+    color: var(--main-marfil-color);
+    font-weight: 600;
+}
+
+.numero-tarjetas {
+    color: var(--main-bronce-claro-color);
+    font-size: 40px;
+}
+
+.idea {
+    font-style: italic;
+    font-size: 25px;
+}
 
 @media(max-width:768px) {
     h1 {
