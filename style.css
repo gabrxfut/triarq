@@ -529,6 +529,110 @@ img {
 
 }
 
+.seccion8 {
+    background-color: var(--main-azul-escudo-color);
+    padding: 110px 0 110px;
+}
+
+.formulario-caso {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin: 0;
+}
+
+.texto-marfil {
+    color: var(--main-marfil-color);
+}
+
+.informacion-contacto {
+    flex: 1 1 360px;
+}
+
+.etiqueta-contacto {
+    color: var(--main-bronce-claro-color);
+    font-size: 12px;
+    letter-spacing: 0.24em;
+}
+
+.etiqueta-info {
+    margin: 4px 0 0;
+}
+
+.formulario {
+    flex: 1 1 520px;
+    background-color: var(--main-marfil-color);
+    color: var(--main-azul-escudo-color);
+    padding: 44px;
+    gap: 22px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ancho-completo {
+    grid-column: 1 / -1;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    border: 0;
+    border-bottom: 1px solid var(--main-azul-escudo-color);
+    background: transparent;
+    font-size: 17px;
+}
+
+.campo input,
+.campo select {
+    height: 50px;
+}
+
+.campo label {
+    font-family: var(--main-cinzel);
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    color: var(--main-azul-escudo-color);
+    text-transform: uppercase;
+}
+
+.boton-formulario {
+    background-color: var(--main-azul-escudo-color);
+    color: var(--main-marfil-color);
+    min-height: 58px;
+    font-family: var(--main-cinzel);
+    font-size: 14px;
+    border: 0;
+    cursor: pointer;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.permiso {
+    display: flex;
+    gap: 12px;
+    font-size: 14px;
+    accent-color: var(--main-azul-escudo-color);
+}
+
+.permiso input {
+    flex: none;
+    margin: 2px 0 0;
+    width: 20px;
+    height: 20px;
+}
+
 @media(max-width:768px) {
     h1 {
         font-size: 50px;
@@ -546,5 +650,10 @@ img {
     .dato-cifras:last-child {
         border-bottom: unset;
     }
+
+    .formulario {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
 
 }
