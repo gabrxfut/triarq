@@ -492,6 +492,43 @@ img {
     margin: 0;
 }
 
+.seccion7 {
+    background-color: var(--main-papel-color);
+    border-top: 1px solid var(--main-lineas-color);
+    padding: 100px 0;
+}
+
+.publicaciones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.tarjetas-publicaciones {
+    border-top: 1px solid var(--main-azul-escudo-color);
+    padding-top: 22px;
+}
+
+.portada {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.fecha {
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    color: var(--main-bronce-oscuro-color);
+}
+
+.descripcion {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+
+}
+
 @media(max-width:768px) {
     h1 {
         font-size: 50px;
