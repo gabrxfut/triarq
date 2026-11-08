@@ -19,6 +19,7 @@
     --main-blanco-color: #ffffff;
     --main-bronce-color: #A3824F;
     --main-foto-color: #E6E2D9;
+    --main-gris-palido-color: #D9DCE3;
     --main-cormorant-garamond: "Cormorant Garamond", serif;
     --main-cinzel: "Cinzel", serif;
     --main-mulish: "Mulish", sans-serif;
@@ -565,6 +566,10 @@ img {
     margin: 4px 0 0;
 }
 
+.etiqueta-info a {
+    text-decoration: none;
+}
+
 .formulario {
     flex: 1 1 520px;
     background-color: var(--main-marfil-color);
@@ -633,6 +638,55 @@ img {
     height: 20px;
 }
 
+footer {
+    background-color: var(--main-azul-noche-color);
+    color: var(--main-marfil-color);
+}
+
+.menu-pie-pagina {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(160px, 1fr));
+    gap: 10px 48px;
+    text-transform: uppercase;
+}
+
+.menu-pie-pagina a {
+    text-decoration: none;
+    font-family: var(--main-cinzel);
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    color: var(--main-gris-palido-color);
+}
+
+.derechos {
+    border-top: 1px solid var(--main-lineas-sutil-color);
+    font-size: 13px;
+    padding: 20px 0 28px;
+}
+
+.pie-pagina {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 64px 0 32px;
+}
+
+.marca-pie-pagina {
+    font-family: var(--main-cinzel);
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 0.14em;
+    color: var(--main-marfil-color);
+}
+
+.nombre-pie-pagina {
+    font-family: var(--main-cinzel);
+    font-size: 12px;
+    letter-spacing: 0.32em;
+    color: var(--main-bronce-claro-color);
+}
+
 @media(max-width:768px) {
     h1 {
         font-size: 50px;
@@ -653,6 +707,10 @@ img {
 
     .formulario {
         grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .menu-pie-pagina {
+        grid-template-columns: repeat(1, minmax(160px, 1fr));
     }
 
 
