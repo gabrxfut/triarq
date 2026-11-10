@@ -81,6 +81,7 @@ body {
 
 .encabezado {
     border-bottom: 1px solid var(--main-lineas-color);
+    position: relative;
 }
 
 .encabezado-contenido {
@@ -127,6 +128,10 @@ body {
     text-transform: uppercase;
     font-size: 13px;
     align-items: center;
+}
+
+.boton-menu {
+    display: none;
 }
 
 .menu a {
@@ -706,7 +711,8 @@ footer {
 .campo textarea:focus-visible,
 .boton-formulario:focus-visible,
 .permiso input:focus-visible,
-a:focus-visible {
+a:focus-visible,
+.boton-menu:focus-visible {
     outline: 2px solid var(--main-bronce-claro-color);
 
     outline-offset: 3px;
@@ -741,6 +747,57 @@ a:focus-visible {
 
     .menu-pie-pagina {
         grid-template-columns: repeat(1, minmax(160px, 1fr));
+    }
+
+    .menu {
+        display: none;
+        background-image: url(imagen/svg/columna.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 60px;
+    }
+
+    .menu a {
+        color: var(--main-marfil-color);
+        font-family: var(--main-cinzel);
+    }
+
+    .boton-menu {
+        display: flex;
+        background-color: var(--main-marfil-color);
+        color: var(--main-azul-escudo-color);
+        padding: 10px 10px;
+    }
+
+    .menu-abierto {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        color: var(--main-marfil-color);
+        background-color: var(--main-azul-escudo-color);
+        padding: 24px 32px;
+    }
+
+    .boton-menu[aria-expanded="true"] .icono-abrir {
+        display: none;
+    }
+
+    .boton-menu[aria-expanded="true"] .icono-cerrar {
+        display: block;
+    }
+
+    .boton-menu[aria-expanded="true"] {
+        border: none;
+        color: var(--main-marfil-color);
+        background-color: var(--main-azul-escudo-color);
+    }
+
+    .icono-cerrar {
+        display: none;
     }
 
 

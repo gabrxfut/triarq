@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link rel="icon" type="image/png" href="imagen/favicon-triarq.png">
     <link rel="stylesheet" href="style.css">
+    <script src="js/index.js" defer></script>
 </head>
 
 <body>
@@ -34,7 +35,15 @@
                     <span class="marca-sub">Law Corp S.A.S.</span>
                 </span>
             </a>
-            <nav aria-label="Principal" class="menu">
+            <button type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal"
+                class="boton-menu"><svg class="icono-abrir" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                    <path d="M4 7h16M4 12h16M4 17h16"></path>
+                </svg> <svg class="icono-cerrar" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                    <path d="M6 6l12 12M18 6L6 18"></path>
+                </svg></button>
+            <nav aria-label="Principal" class="menu" id="menu-principal">
                 <a href="#firma">La firma</a>
                 <a href="#areas">Áreas de práctica</a>
                 <a href="#equipo">Equipo</a>
