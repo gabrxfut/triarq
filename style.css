@@ -745,6 +745,18 @@ a:focus-visible,
         border-bottom: unset;
     }
 
+    .introducion-tarjetas {
+        grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+    }
+
+    .foto-equipo {
+        grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+    }
+
+    .publicaciones {
+        grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    }
+
     .formulario {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
