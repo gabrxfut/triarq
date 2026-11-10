@@ -144,11 +144,18 @@ a {
     display: inline-flex;
     align-items: center;
     min-height: 46px;
+    transition: background-color 0.2s, box-shadow 0.2s;
 }
 
 .boton-azul {
     background-color: var(--main-azul-escudo-color);
     color: var(--main-papel-color);
+}
+
+.boton-azul:hover {
+    background-color: var(--main-rayas-color);
+    box-shadow: inset 0 -4px 0 var(--main-bronce-color);
+
 }
 
 .boton-borde {
@@ -686,6 +693,29 @@ footer {
     letter-spacing: 0.32em;
     color: var(--main-bronce-claro-color);
 }
+
+.menu-pie-pagina a:hover,
+.boton-borde:hover,
+.enlace-ramas:hover,
+.etiqueta-info a:hover {
+    color: var(--main-bronce-claro-color);
+}
+
+.campo input:focus-visible,
+.campo select:focus-visible,
+.campo textarea:focus-visible,
+.boton-formulario:focus-visible,
+.permiso input:focus-visible,
+a:focus-visible {
+    outline: 2px solid var(--main-bronce-claro-color);
+
+    outline-offset: 3px;
+}
+
+.menu a:not(.boton):hover {
+    color: var(--main-bronce-claro-color);
+}
+
 
 @media(max-width:768px) {
     h1 {
