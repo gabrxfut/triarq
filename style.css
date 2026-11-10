@@ -732,6 +732,10 @@ a:focus-visible,
         font-size: 28px;
     }
 
+    .frase-socio {
+        background-position: -30px;
+    }
+
     .dato-cifras {
         border-bottom: 1px solid var(--main-lineas-sutil-color);
         border-right: unset;
